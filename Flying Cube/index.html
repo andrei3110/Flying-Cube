@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+   <div class="timer"> <h1 class="time"><time >00:00:00</time></h1></div>
+    <div class="Name">Flying Cube</div>
+    <!-- <img src="./barier.jpg" type="hidden" id="img"> -->
+   <button class="replase" type="button" id="Replase" onClick="window.location.reload();"></button>
+   <button class="GameOver" id="gameOver"></button>
+   
+   <!-- <img src="./barier.jpg" id="lamp" width="100" height="105"> -->
+
+
+    <button id="stop" class="stop">Stop</button>
+   <button id="start" class="start">Start</button>
+
+   <!-- <button onclick="draw('repeat')">Repeat</button>  -->
+
+
+<!-- <script>
+function draw(direction) {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.clearRect(0, 0, c.width, c.height); 
+  var img = document.getElementById("lamp")
+  var pat = ctx.createPattern(img, direction);
+  ctx.beginPath()  
+        
+            ctx.moveTo(this.polygon[0].x, this.polygon[0].y);
+        for (let i = 0; i < this.polygon.length - 1; i++) {
+            
+            ctx.lineTo(this.polygon[i + 1].x, this.polygon[i + 1].y)
+            
+           
+        
+        }
+  ctx.fillStyle = pat;
+  ctx.fill();
+}
+</script> -->
+
+    <canvas></canvas>
+    <script src="./restart.js"></script>
+    <script src="./utils.js"></script>
+    <script src="./sensor.js"></script>
+    <script src="./counter.js"></script>
+    <script src="./barier.js"></script>
+    <script src="./road.js"></script>
+    <script src="./controls.js"></script>
+    <script src="./bot.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
